@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-ca">
+
+	<head>
+		<meta charset="utf-8">
+		<title>James Hamet</title>
+		<meta name="author" content="James Hamet">
+		<meta name="description" content="Personal Website of James Hamet - UI Designer, Front End Developer and Musician">
+		<meta name="keywords" content="James Hamet, website developer, web designer, new york web designer, michigan web designer, UI Designer, UI, User Interface Designer, front end developer, PHP, HTML, CSS, SQL">
+		<meta name="language" content="en" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+		<link rel="icon" href="/img/favicon.ico""
+		
+		<script src="/jmodernizr.custom.84533.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
+	</head>
+
+	<body>
+		<div id="topPanel">
+			<div class="header">
+				<div class="links">
+					<div class="home">
+						<a id="logo" class="logo" href="/">James Hamet</a>
+					</div>
+					<ul class="social">
+						<li class="email">
+							<a href="mailto:jameshamet@gmail.com" title="Send me an Email" target="_blank">jameshamet@gmail.com</a>
+						</li>
+						<li class="googleplus">
+							<a href="https://plus.google.com/116476359350487671648/posts" title="Add me on Google+" target="_blank">google+</a>
+						</li>
+						<!--
+						<li class="facebook">
+							<a href="http://www.facebook.com/welikejames" title="Like me on Facebook" target="_blank">facebook</a>
+						</li>
+						-->
+						<li class="linkedin">
+							<a href="http://www.linkedin.com/pub/james-hamet/41/73/403/" title="Connect with me on Linkedin" target="_blank">linkedin</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div class="main">	
+			<div id="paragraph">
+				This website uses JQuery! Please enable Javascript or use a modern browser such as Google Chrome.
+				<br><br>&copy; 2013 James Hamet
+			</div>
+			<div id="picture">
+				<div id="picturebox">
+					<div id="topPic"></div>
+					<div id="midPic"></div>
+					<div id="botPic"></div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="footer">
+			&copy; 2013 James Hamet
+		</div>
+		
+		<div id="about">
+			<p class="textTitle">
+				About
+			</p>
+			<p>
+			I've undertaken a host of small projects and have worked for a handful of well-established companies of differing industries. As a result, I've worn many titles and taken turns as the researcher, the designer, the programmer, the marketer, the manager, and the lowly intern. As a result, I have a unique ability to partake in multifaceted businesses. And my personal life is just as diverse as my work life. When I'm not coding or pushing pixels, you'll find me deep in a good read, outside playing rugby, or carving ice.			
+			</p>
+		</div>
+		<div id="designer">
+			<p class="textTitle">
+				designer
+			</p>
+			<p>
+				Art does not move like music, and it does not function like a program. It does not create but simply exists, a concrete totem glorifying a purpose or a cause. Visual displays are not always easy to create and often the work has to be redone over and over again, each time from scratch, before you finally succeed in painting on canvas the image in your head. But art is complete. And when you're finished you can step away and admire your work like a sculpter.
+			</p>
+		</div>
+		<div id="programmer">
+			<p class="textTitle">
+				&lt;programmer&gt;
+			</p>
+			<p>
+				I love the logic and structure of programming. No project is truly beautiful if it doesn't have elegant and efficient code, whether it be HTML, CSS or jQuery, to match the quality of its interface. And for great functionality, SQL, PHP and AJAX knowledge is a must. Programming is more to me than just typing away. It isn't without emotion, without thought, or without difficulty. It is a careful passion, and where the designer is the architect, the programmer is the contractor, building the components that fit together.
+			</p>
+		</div>
+		<div id="musician">
+			<p class="textTitle">
+				&#9835;musician
+			</p>
+			<p>
+				Music is great fun to listen to and to compose, but not so easy to perfect, and so it provides me with the perfect challenge: adding to the musical world. It is both understanding how sounds are created, and not understanding how they are so capable at affecting us that makes music friendly and familiar yet distant and mysterious. Music is calculated and free flowing, constrained yet shapeless, a truly fascinating art medium. I was introduced to music at a young age and took up the violin as my first instrument. Since then, I have tried others, including the electrical guitar and the mandolin.
+			</p>
+		</div>
+		<div id="aboutPic">
+			<div id="picturebox">
+				<a class="click" href="#programmer"><div id="topPic">&lt;programmer&gt;</div></a>
+				<a class="click" href="#musician"><div id="midPic">&#9835;musician</div></a>
+				<a class="click" href="#designer"><div id="botPic">designer</div></a>
+			</div>
+		</div>
+		<div id="designerPic">
+			<div id="picturebox">
+				<a class="click" href="#about"><div id="desiPic">go back</div></a>
+			</div>
+			</center>
+		</div>
+		<div id="programmerPic">
+			<div id="picturebox">
+				<a class="click" href="#about"><div id="progPic">go back</div></a>
+			</div>
+		</div>
+		<div id="musicianPic">
+			<div id="picturebox">
+				<a class="click" href="#about"><div id="musiPic">go back</div></a>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$("#topPanel").addClass("visible");
+				$('#paragraph').html($("#about").html());
+				$("#paragraph").addClass("visible");
+				$('#picture').html($("#aboutPic").html());
+				$("#picture").addClass("visible");
+				$("#footer").delay(1000).queue(function( nxt ) {
+					$('#footer').addClass("visible");
+					nxt();
+				});		
+			});
+			$('.click').live('click', function() {
+				var content_id = $(this).attr('href');
+				$('#paragraph').removeClass("visible");
+				$('#paragraph').delay(1000).queue(function( nxt ) {
+					$('#paragraph').html($(content_id).html());
+					$("#paragraph").addClass("visible");
+					nxt();
+				});		
+				$('#picture').removeClass("visible");
+				$('#picture').delay(1000).queue(function( nxt ) {
+					$('#picture').html($(content_id + "Pic").html());
+					$("#picture").addClass("visible");
+					nxt();
+				});			
+				return false;
+			});
+		</script>
+		
+	</body>
+
+</html>
