@@ -17,3 +17,10 @@ section h3.section-subheading {
 section#portfolio,section#about,.dontshow {
 	display: none !important;
 }
+section#contact {
+  background-color: #222;
+}
+footer {
+  background: #465A65;
+  color: white;
+}

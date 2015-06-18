@@ -13,10 +13,11 @@ body {
 
 .text-muted {
     color: #777;
+    font-size: 120%;
 }
 
 .text-primary {
-    color: #fed136;
+    color: #465A65;
 }
 
 p {
@@ -174,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: black;
+    background-color: #465A65;
 		max-width:100%;
 }
 
@@ -220,13 +221,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #fec136;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #fec136;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -258,7 +259,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: black;
+        background-color: #465A65;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -310,7 +311,7 @@ header .intro-text .intro-heading {
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
-				text-shadow: 2px 8px 6px rgba(0,0,0,1),0px -5px 35px rgba(0,0,0,1); 
+				text-shadow: 0px 0px 10px rgba(0,0,0,1); 
 				padding-bottom: 50px;
     }
 
@@ -321,7 +322,7 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
-				text-shadow: 2px 8px 6px rgba(0,0,0,1),0px -5px 35px rgba(0,0,0,1); 
+				text-shadow: 0px 0px 10px rgba(0,0,0,1); 
     }
 }
 
@@ -353,6 +354,7 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    font-size: 180%;
 }
 
 #portfolio .portfolio-item {
@@ -754,7 +756,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: #fff;
-    background-color: #222;
+    background-color: #fed136;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -763,7 +765,8 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: white;
+    color: black;
 }
 
 .btn:focus,
