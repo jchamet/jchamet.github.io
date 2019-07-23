@@ -1,0 +1,272 @@
+html,body
+{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+	height:100%;
+}
+body,div,p
+{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+}
+div
+{
+	display:block;
+}
+a
+{
+	text-decoration:none;
+	color:black !important;
+	font-size:120%;
+}
+ul
+{
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+.main a:hover
+{
+	text-decoration:underline;
+}
+.textTitle
+{
+	font-weight: 700;
+	font-size:300%;
+}
+
+.header
+{
+	overflow:hidden;
+	position:relative;
+	height:92px;
+	webkit-box-shadow: 0 0 3px 2px;
+	-moz-box-shadow: 0 0 3px 2px;
+	box-shadow: 0 0 3px 2px;
+}
+.header:before
+{
+	background: url(img/header-bg.jpg) 0 0 repeat;
+	content: "";
+	position: absolute;
+	width:300%;
+	height:1000%;
+	left:-50%;
+	z-index:-1;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+.links
+{
+	clear:both;
+	max-width:1000px;
+	margin:0 auto;
+}
+.logo,.social li
+{
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+}
+.logo:hover,.social li:hover
+{
+	opacity:.5
+}
+.social
+{
+	display: block;
+	float: right;
+	list-style: none;
+	margin: 30px 0 0 0;
+}
+.social li 
+{
+	display: inline-block;
+}
+.social li a 
+{
+	height:32px;
+	width:32px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+.email a 
+{
+	width:210px !important;
+}
+.logo
+{
+	height:92px;
+	width:64px;
+	background: url(img/logo.png) 0 0 no-repeat;
+	text-indent: -9999px;
+	float: left;
+	background-position:center;
+}
+.email
+{
+	background: url(img/gmail.png) 0 0 no-repeat;
+	width:210px;
+}
+.googleplus
+{
+	background: url(img/google.png) 0 0 no-repeat;
+}
+.facebook
+{
+	background: url(img/facebook.png) 0 0 no-repeat;
+}
+.linkedin
+{
+	background: url(img/linkedin.png) 0 0 no-repeat;
+}
+
+.main
+{
+	margin-top:120px;
+}
+
+#topPanel,#paragraph,#picture,#footer
+{
+	transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+}
+#topPanel
+{
+	top:-200px;
+	position:absolute;
+	width:100%;
+}
+#topPanel.visible
+{
+	top:0px;
+}
+#paragraph
+{
+	position: absolute;
+	left:-50%;
+	width:30%;
+}
+#paragraph.visible
+{
+	left:16%;
+}
+#picture
+{
+	position: absolute;
+	right:-50%;
+	width:30%;
+	margin-top:40px;
+}
+#picture.visible
+{
+	right:16%;
+}
+
+#about,#designer,#programmer,#musician,#aboutPic,#designerPic,#programmerPic,#musicianPic
+{
+	display:none;
+}
+
+#picturebox
+{
+	height:360px;
+	overflow:hidden;
+}
+#topPic,#midPic,#botPic,#desiPic,#progPic,#musiPic
+{
+    position:relative;
+    height:120px;
+    transition: all .8s ease-in-out;
+	-webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+}
+#desiPic,#progPic,#musiPic
+{
+    height:360px;
+    font-weight: 700;
+    text-align:right;
+    font-size:160%;
+}
+#desiPic
+{
+	background: url(img/med.jpg);
+    
+}
+#progPic
+{
+	background: url(img/mep.jpg);
+}
+#musiPic
+{
+	background: url(img/mem.jpg);
+}
+#topPic
+{
+   background: url(img/mep.jpg);
+    background-position:0px 0px; 
+    
+}
+#midPic
+{
+   background: url(img/mem.jpg);
+    background-position:0px 240px; 
+}
+#botPic
+{
+   background: url(img/med.jpg);
+    background-position:0px 120px;
+}
+#topPic:hover,#midPic:hover,#botPic:hover
+{
+    z-index:1000;
+    height:360px;
+    margin-bottom:-240px;
+}
+#topPic:hover
+{
+	background-position:0px 0px;
+    top:0px;
+}
+#midPic:hover
+{
+	background-position:0px 360px;
+    top:-120px;
+}
+#botPic:hover
+{
+	background-position:0px 360px;
+    top:-240px;
+}
+#topPic,#midPic,#botPic,#desiPic,#progPic,#musiPic
+{
+    background-size:100% 360px;
+}
+
+#footer
+{
+	height:60px;
+	position:absolute;
+	bottom:0px; 
+	text-align:center;
+	width:100%;
+	z-index:-1;
+	opacity:0;
+}
+#footer.visible
+{
+	opacity:1;
+}
+.navbar.navbar-default.navbar-fixed-top.navbar-shrink {
+	background-color:black !important;
+}
